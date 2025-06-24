@@ -23,5 +23,5 @@ output "random_file_id" {
 }
 
 output "random_file_name" {
-  value = local_file.name.name
+  value = local_file.name.filename
 }

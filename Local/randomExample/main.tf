@@ -18,6 +18,10 @@ output "random_pet_name" {
   value = random_pet.name.id
 }
 
-output "random_file_name" {
+output "random_file_id" {
   value = local_file.name.id
+}
+
+output "random_file_name" {
+  value = local_file.name.name
 }

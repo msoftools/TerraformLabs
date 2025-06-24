@@ -8,8 +8,10 @@ resource "local_file" "local-file-creation" {
    content = "Welcome to the terraform platform "
 }
 
-resource "local_file" "bar" {
-  filename = "bar.txt"
-  content = "Hello Terraform re:invent 2024"
-  file_permission = "0400"
-} 
+#resource "local_file" "bar" {
+#  filename = "bar.txt"
+#  content = "Hello Terraform re:invent 2024"
+#  file_permission = "0400"
+
+
+#} 

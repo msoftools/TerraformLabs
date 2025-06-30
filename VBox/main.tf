@@ -13,7 +13,7 @@ resource "virtualbox_vm" "node" {
   count     = 2
   name      = "marioVB-Puppy"
   #name      = format("node-%02d", count.index + 1)
-  image     = "puppy.iso"
+  image     = "/home/mario/Documents/TerraformLabs/VBox/virtualbox.box"
   cpus      = 2
   memory    = "512 mib"
   #user_data = file("${path.module}/user_data")

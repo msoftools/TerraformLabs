@@ -19,7 +19,7 @@ resource "virtualbox_vm" "node" {
   #user_data = file("${path.module}/user_data")
 
   network_adapter {
-    type           = "hostonly"
+    type           = "bridged"
     device         = "IntelPro1000MTDesktop"
     host_interface = "vboxnet1"
   }

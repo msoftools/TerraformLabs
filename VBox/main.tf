@@ -11,8 +11,8 @@ terraform {
 
 resource "virtualbox_vm" "node" {
   count     = 2
-  name      = "marioVB-Puppy"
-  #name      = format("node-%02d", count.index + 1)
+  #name      = "marioVB-Puppy"
+  name      = format("node-%02d", count.index + 1)
   image     = "/home/mario/Documents/TerraformLabs/VBox/virtualbox.box"
   cpus      = 2
   memory    = "512 mib"
@@ -20,6 +20,7 @@ resource "virtualbox_vm" "node" {
 
   network_adapter {
     type           = "hostonly"
+    device         = "IntelPro1000MTDesktop"
     host_interface = "VirtualBox Host-Only Ethernet Adapter"
   }
 }

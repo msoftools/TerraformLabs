@@ -34,6 +34,7 @@ output "IPAddr_2" {
 
 
 #Tutorial: https://www.roksblog.de/terraform-virtualbox-provider-terrafarm/
+#https://jroliva.net/2024/02/12/how-to-terraform-and-virtualbox/
 
 
 

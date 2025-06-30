@@ -26,7 +26,7 @@ resource "virtualbox_vm" "node" {
   network_adapter {
     type           = "bridged"
     #device         = "IntelPro1000MTDesktop"
-    host_interface = "eth0"
+    host_interface = "enp0s3"
     # On Windows use this instead
     # host_interface = "VirtualBox Host-Only Ethernet Adapter"
   }

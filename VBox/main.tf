@@ -21,7 +21,7 @@ resource "virtualbox_vm" "node" {
   network_adapter {
     type           = "hostonly"
     device         = "IntelPro1000MTDesktop"
-    host_interface = "VirtualBox Host-Only Ethernet Adapter"
+    host_interface = "vboxnet1"
   }
 }
 
